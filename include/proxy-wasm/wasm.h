@@ -245,12 +245,14 @@ protected:
 
   WasmCallWord<2> on_request_headers_abi_01_;
   WasmCallWord<3> on_request_headers_abi_02_;
+  WasmCallWord<3> on_request_headers_abi_03_;
   WasmCallWord<3> on_request_body_;
   WasmCallWord<2> on_request_trailers_;
   WasmCallWord<2> on_request_metadata_;
 
   WasmCallWord<2> on_response_headers_abi_01_;
   WasmCallWord<3> on_response_headers_abi_02_;
+  WasmCallWord<3> on_response_headers_abi_03_;
   WasmCallWord<3> on_response_body_;
   WasmCallWord<2> on_response_trailers_;
   WasmCallWord<2> on_response_metadata_;

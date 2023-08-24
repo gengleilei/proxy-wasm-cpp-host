@@ -83,6 +83,10 @@ bool BytecodeUtil::getAbiVersion(std::string_view bytecode, proxy_wasm::AbiVersi
             ret = AbiVersion::ProxyWasm_0_2_1;
             return true;
           }
+          if (export_name == "proxy_abi_version_0_2_2") {
+            ret = AbiVersion::ProxyWasm_0_2_2;
+            return true;
+          }
         }
         // Skip export's index.
         if (!parseVarint(pos, end, export_name_size)) {
